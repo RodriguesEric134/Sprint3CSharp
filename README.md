@@ -42,7 +42,6 @@ D:\csharpSprint3
 O banco utilizado é Oracle e a tabela criada pelo EF Core é:
 
 ```sql
-Copiar código
 CREATE TABLE APOSTA_SITES (
     Id            VARCHAR2(100) PRIMARY KEY,
     Nome          VARCHAR2(255) NOT NULL,
@@ -117,7 +116,6 @@ Invoke-RestMethod -Method Get -Uri http://localhost:5074/api/aposta-sites/{id}
 
 ♻️ Atualizar
 ```powershell
-Copiar código
 $body = @{
   id = "{id}"
   nome = "Bet365 Atualizado"
